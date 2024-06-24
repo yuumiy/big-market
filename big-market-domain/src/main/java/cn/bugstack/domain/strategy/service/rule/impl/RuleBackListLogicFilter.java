@@ -20,6 +20,7 @@ import javax.annotation.Resource;
  */
 @Slf4j
 @Component
+//注解的作用是方便注入之后自动转map的作用
 @LogicStrategy(logicMode = DefaultLogicFactory.LogicModel.RULE_BLACKLIST)
 public class RuleBackListLogicFilter implements ILogicFilter<RuleActionEntity.RaffleBeforeEntity> {
 
