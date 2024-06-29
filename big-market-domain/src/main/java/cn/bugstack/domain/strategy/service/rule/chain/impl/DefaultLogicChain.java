@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * @create 2024-01-20 10:06
  */
 @Slf4j
-@Component("default")
+@Component("rule_default")
 public class DefaultLogicChain extends AbstractLogicChain {
 
     @Resource
@@ -32,7 +32,7 @@ public class DefaultLogicChain extends AbstractLogicChain {
 
     @Override
     protected String ruleModel() {
-        return "default";
+        return DefaultChainFactory.LogicModel.RULE_DEFAULT.getCode();
     }
 
 }
